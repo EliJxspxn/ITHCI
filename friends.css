@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+video {
+  height: 120vh;
+  width: max-content;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: brightness(50%);
+}
+
+.container{
+  width: 100%;
+  height: 76vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box{
+  width: 100px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 50px;
+  background: url(DCIM/Franz2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: width 0.5s;
+}
+
+.img-box:nth-child(2){
+  background: url(DCIM/archie.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(3){
+  background: url(DCIM/dodoy.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(4){
+  background: url(DCIM/Pedro.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(5){
+  background: url(DCIM/lloyd.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(6){
+  background: url(DCIM/carlo.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(7){
+  background: url(DCIM/marc.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(8){
+  background: url(DCIM/andrei.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box h3{
+  padding: 5px;
+  background-color: #000000ce;
+  border-radius: 10px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+
+.img-box:hover{
+  width: 250px;
+  cursor: pointer;
+}
+
+.img-box:hover h3{
+  opacity: 1;
+  bottom: 25px;
+}
+
+.backbutton{
+  margin-top: 40px;
+  margin-left: 60px;
+}
+
+.backbutton a{
+  background-color: rgba(161, 151, 151, 0.863);
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #000000;
+  padding:15px;
+  transition-timing-function: ease-out;
+  transition-duration: transform;
+}
+
+.backbutton a:hover{
+  color: #fff;
+  transform: scale(1.2);
+}
+
+h1{
+  margin-bottom: 10px;
+  margin-left: 84vh;
+  color: #07f7eb;
+  font-family:Arial Black;
+}
+
+h1:hover{
+  cursor: pointer;
+  color: beige;
+}

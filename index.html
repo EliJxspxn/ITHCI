@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <a href="#"><img src="DCIM/evonobg.png" alt="logo" class="logo" /></a>
+        <ul class="links">
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="subjects.html">Subjects</a></li>
+          <li><a href="friends.html">Skills</a></li>
+          <li><a href="hobbies.html">Projects</a></li>
+        </ul>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="dropdown_menu">
+          <li>
+            <a href="profile.html"><button>PROFILE</button></a>
+          </li>
+          <li>
+            <a href="subjects.html"><button>SUBJECTS</button></a>
+          </li>
+          <li>
+            <a href="friends.html"><button>FRIENDS</button></a>
+          </li>
+          <li>
+            <a href="hobbies.html"><button>HOBBIES</button></a>
+          </li>
+        </div>
+      </div>
+    </header>
+
+    <video autoplay loop muted plays-inline>
+      <source src="DCIM/backvideo3.mp4" type="video/mp4" />
+    </video>
+
+    <main>
+      <section id="hero">
+        <h1>ELI JASPEN</h1>
+        <p>
+          "By the power of truth, I, while living, have conquered the universe"
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+  </body>
+</html>
